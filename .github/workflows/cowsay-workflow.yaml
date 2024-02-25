@@ -6,6 +6,9 @@ jobs:
     cowsay:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout the repo
+          uses: actions/checkout@v4
+
         - name: dragon job
           run: |
             chmod +x ./script.sh
